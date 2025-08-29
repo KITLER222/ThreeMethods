@@ -26,7 +26,7 @@ namespace ThreeMethods
             int[] array = new int[n];
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine($"array[{n}]");
+                Console.WriteLine($"array[{i}]");
                 array[i] = int.Parse(Console.ReadLine());
             }
             return array;
