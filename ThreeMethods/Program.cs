@@ -21,10 +21,10 @@ namespace ThreeMethods
             PrintArray(arr);
         }
 
-        public static int[] ReadArray(int n)
+        public static int[] ReadArray(int N)
         {
-            int[] array = new int[n];
-            for (int i = 0; i < n; i++)
+            int[] array = new int[N];
+            for (int i = 0; i < N; i++)
             {
                 Console.WriteLine($"array[{i}]");
                 array[i] = int.Parse(Console.ReadLine());
@@ -32,22 +32,22 @@ namespace ThreeMethods
             return array;
         }
 
-        public static void PrintArray(int[] array)
+        public static void PrintArray(int[] arrayP)
         {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < arrayP.Length; i++)
             {
-                Console.WriteLine(array[i]);
+                Console.WriteLine(arrayP[i]);
             }
             Console.WriteLine();
         }
 
-        public static void ReverseInPlace(int[] array)
+        public static void ReverseInPlace(int[] arrayR)
         {
-            for (int i = 0, j = array.Length - 1; i < j; i++, j--)
+            for (int i = 0, j = arrayR.Length - 1; i < j; i++, j--)
             {
-                int t = array[i];
-                array[i] = array[j]; 
-                array[j] = t;
+                int t = arrayR[i];
+                arrayR[i] = arrayR[j]; 
+                arrayR[j] = t;
             }
         }
     }
